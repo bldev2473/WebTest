@@ -11,8 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<
-<form action="file_upload_test_action_page.jsp" method="post" enctype="multipart/form-data">
+<form action="file_upload_test_to.jsp" method="post" enctype="multipart/form-data">
     사용자명: <input type="text" name="userName">
     업로드할 파일: <input type="file" name="uploadFile">
     <input type="submit" value="Upload">

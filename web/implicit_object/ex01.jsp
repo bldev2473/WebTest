@@ -17,7 +17,6 @@
         sum += i;
     }
     request.setAttribute("sum", sum);
-    request.setAttribute("sum1", sum);
     RequestDispatcher rd = request.getRequestDispatcher("ex01_result.jsp");
     rd.forward(request, response);
 %>

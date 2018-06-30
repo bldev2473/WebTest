@@ -10,7 +10,8 @@
 사번: ${emp.empNo}<br>
 이름: ${emp.empName}<br>
 급여: <fmt:formatNumber value="${emp.sal}" groupingUsed="true"/><br>
-입사일: <fmt:formatDate value="${emp.hireDate}" pattern="yyyy/MM/dd"/>
+입사일: <fmt:formatDate value="${emp.hireDate}" pattern="yyyy/MM/dd"/><br>
+입사일: <fmt:formatDate value="${emp.hireDate}" pattern="yyyy-MM-dd"/>
 </table>
 </body>
 </html>
