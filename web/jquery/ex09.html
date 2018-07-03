@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var array = [
+                {name: '오라클', link: 'http://www.oracle.com'},
+                {name: '다음', link: 'http://www.daum.net'},
+                {name: '구글', link: 'http://www.google.co.kr'}
+            ];
+            $.each(array, function (index, item) {
+                var out = '<a href=' + item.link + '>' + item.name + '</a><p></p>';
+                document.body.innerHTML += out;
+            })
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

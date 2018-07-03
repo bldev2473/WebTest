@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    em {
+        font-size: 20pt;
+        line-height: 20pt;
+        margin: 20px;
+        counter-reset: blue;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('p em').css('background-color', 'yellow').each(function () {
+                $('.result1').append($(this).text() + "\n");
+            });
+            $('div > em').css('background-color', 'pink').each(function () {
+                $('.result2').append($(this).text() + "\n");
+            });
+        console.log("검색된 엘리멘트 개수: " + $('p em').length);
+        console.log("검색된 엘리멘트 개수: " + $('div > em').length);
+        });
+    </script>
+</head>
+<body>
+<p>
+    <em>one</em><em>two</em><span><em>three</em></span>
+</p>
+<div>
+    <em>four</em><span><em>five</em></span><em>six</em>
+</div>
+<hr>
+<div>
+    <span> ancestor descendant로 검색된 엘리멘트: </span>
+    <span class="result1"></span>
+</div>
+<div>
+    <span> parent &gt; child로 검색된 엘리멘트: </span>
+    <span class="result2"></span>
+</div>
+</body>
+</html>

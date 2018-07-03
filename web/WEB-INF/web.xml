@@ -11,4 +11,13 @@
         <param-name>MasterPW</param-name>
         <param-value>admin</param-value>
     </context-param>
+
+    <servlet>
+        <servlet-name>GetAndPostEx03Servlet</servlet-name>
+        <servlet-class>GetAndPostEx03Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAndPostEx03Servlet</servlet-name>
+        <url-pattern>/GetAndPostEx03Servlet</url-pattern>
+    </servlet-mapping>
 </web-app>

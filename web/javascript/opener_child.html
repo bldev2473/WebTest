@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function chk1() {
+            opener.document.getElementById("openerInput").value ="kkk";
+        }
+        function chk2() {
+            window.close()
+        }
+        function chk3() {
+            opener.close();
+        }
+    </script>
+</head>
+<body>
+<img src="../images/java.jpg"><br>
+<button onclick="chk1()">값 넣기</button>
+<button onclick="chk2()">내 창 닫기</button>
+<button onclick="chk3()">부모 창 닫기</button>
+
+</body>
+</html>

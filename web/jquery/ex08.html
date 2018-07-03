@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    .highlight_0 {
+        background-color: pink;
+    }
+
+    .highlight_1 {
+        background-color: yellow;
+    }
+
+    .highlight_2 {
+        background-color: green;
+    }
+
+    .highlight_3 {
+        background-color: blue;
+    }
+
+    .highlight_4 {
+        background-color: red;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('h1').each(function (index, item) {
+                $(this).addClass('highlight_' + index);
+            })
+        });
+    </script>
+</head>
+<body>
+<h1>h1</h1>
+<h1>h1</h1>
+<h2>h2</h2>
+<h1>h1</h1>
+<h1>h1</h1>
+</body>
+</html>

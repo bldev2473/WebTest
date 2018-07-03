@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function chk() {
+            if (!frm.name.value) {
+                alert("너 이름 뭐니?");
+                frm.name.focus();
+                return;
+            }
+            if (!frm.age.value) {
+                alert("너 나이 입력");
+                frm.age.focus();
+                return;
+            }
+            if (isNaN(frm.age.value)) {
+                alert("나이가 문자임");
+                frm.age.focus();
+                frm.age.value = "";
+                return;
+            }
+            var addr = document.getElementById("addr");
+            if (addr.value.length == 0) {
+                alert("어디사니");
+                addr.focus();
+                return;
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>입력창</h2>
+<form action="" name="frm">
+    이름: <input type="text" name="name"><br>
+    나이: <input type="text" name="age"><br>
+    주소: <input type="text" name="addr" id="addr"><br>
+    <input type="button" value="확인" onclick="chk()">
+</form>
+</body>
+</html>
