@@ -20,4 +20,18 @@
         <servlet-name>GetAndPostEx03Servlet</servlet-name>
         <url-pattern>/GetAndPostEx03Servlet</url-pattern>
     </servlet-mapping>
+
+    <!--MVC2-->
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>MVC2.control.Controller</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/command.properties</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
 </web-app>
